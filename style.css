@@ -1,0 +1,13 @@
+
+body{
+    background-color: blueviolet;
+    color: beige;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    border: 40px solid brown;
+}
