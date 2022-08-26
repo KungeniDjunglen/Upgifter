@@ -11,7 +11,9 @@ h1{
 }
 
 .ramen{
-    border: 5px, solid, lime;
+    border-style: groove;
+    border-width: 10px;
+    border-color: green;
 }
 
 .program{
