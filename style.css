@@ -4,10 +4,25 @@ body{
     color: beige;
 }
 
-h1{
-    text-align: center;
+h1{ 
+    font-size: 22px;
+    font-family: Arial;
+
 }
 
-p{
-    border: 40px solid brown;
+.ramen{
+    border: 5px, solid, lime;
+}
+
+.program{
+    text-align: center;
+    background-color: red;
+}
+
+.höger{
+    text-align: right;
+}
+
+.länk{
+    text-decoration: none;
 }
