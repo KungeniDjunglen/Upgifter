@@ -28,3 +28,21 @@ h1{
 .länk{
     text-decoration: none;
 }
+
+table, tr, td, th {
+    border-color: black ;
+    border-width: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    font-size: 30px;
+    font-family: '' ;
+}
+
+tr:nth-child(2), tr:nth-child(4){
+
+    background-color: lime;
+}
+tr:nth-child(3), tr:nth-child(5){
+
+    background-color: brown;
+}
