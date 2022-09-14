@@ -1,8 +1,32 @@
 
 body{
+    display: grid  ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 800px;
+    grid-template-areas: 
+    'heade header'
+    'main1 main2'
+    'table1 table2';
     background-color: blueviolet;
     color: beige;
 }
+
+.header{
+    grid-area: header;
+}
+.main1{
+    grid-area: main1;
+}
+.main2{
+    grid-area: main2;
+}
+.table1{
+    grid-area: table1;
+}
+.table2{
+    grid-area: table2;
+}
+
 
 h1{ 
     font-size: 22px;
@@ -46,3 +70,21 @@ tr:nth-child(3), tr:nth-child(5){
 
     background-color: brown;
 }
+
+.blueclass{
+    background-color: blue;
+}
+.redclass{
+    background-color: red;
+}
+.limeclass{
+    background-color: lime;
+}
+.blackclass{
+    background-color: black;
+}
+.yellowclass{
+    background-color: yellow;
+}
+
+
