@@ -1,23 +1,28 @@
 
 body{
     display: grid  ;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 100px 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-    'heade header'
+    'header header'
     'main1 main2'
     'table1 table2';
-    background-color: blueviolet;
-    color: beige;
+    background-color: beige;
+    color: darkred;
 }
 
-.header{
+header{
     grid-area: header;
 }
-.main1{
+
+img{
+    width: 50%;
+}
+
+section{
     grid-area: main1;
 }
-.main2{
+aside{
     grid-area: main2;
 }
 .table1{
@@ -26,6 +31,7 @@ body{
 .table2{
     grid-area: table2;
 }
+
 
 
 h1{ 
@@ -51,6 +57,7 @@ h1{
 
 .länk{
     text-decoration: none;
+    
 }
 
 table, tr, td, th {
