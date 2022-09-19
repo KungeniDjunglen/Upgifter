@@ -2,7 +2,7 @@
 body{
     display: grid  ;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 4em 30em auto;
     grid-template-areas: 
     'header header'
     'main1 main2'
@@ -25,8 +25,8 @@ section{
 aside{
     grid-area: main2;
 }
-.table1{
-    grid-area: table1;
+footer{
+    grid-area: table1,;
 }
 .table2{
     grid-area: table2;
@@ -80,18 +80,31 @@ tr:nth-child(3), tr:nth-child(5){
 
 .blueclass{
     background-color: blue;
+    width: 10em; height: 10em; 
+    
 }
 .redclass{
     background-color: red;
+    width: 10em; height: 10em; 
 }
 .limeclass{
     background-color: lime;
+    width: 10em; height: 10em; 
+
+
 }
 .blackclass{
     background-color: black;
+    width: 10em; height: 10em; 
+
 }
 .yellowclass{
     background-color: yellow;
+    width: 10em; height: 10em; 
+
+}
+.bigsquaretb{
+    width: 10em; height: 10em; 
 }
 
 
