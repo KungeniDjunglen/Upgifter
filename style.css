@@ -6,11 +6,12 @@ body{
     grid-template-areas: 
     'header header'
     'main1 main2'
-    'table1 table2';
+    'footer footer';
     background-color: beige;
     color: darkred;
 }
 
+/* Grid layout */
 header{
     grid-area: header;
 }
@@ -25,11 +26,21 @@ section{
 aside{
     grid-area: main2;
 }
+
 footer{
-    grid-area: table1,;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "table1 table2";
 }
-.table2{
+footer table:nth-child(1){
+    grid-area: table1;
+
+}
+footer table:nth-child(2){
     grid-area: table2;
+
 }
 
 
@@ -69,6 +80,7 @@ table, tr, td, th {
     font-family: '' ;
 }
 
+/* Första tabelupgiften */
 tr:nth-child(2), tr:nth-child(4){
 
     background-color: lime;
@@ -77,34 +89,42 @@ tr:nth-child(3), tr:nth-child(5){
 
     background-color: brown;
 }
+footer td:nth-child(2), td:nth-child(3), td:nth-child(6), td:nth-child(7), td:nth-child(10), td:nth-child(11){
+    text-align: center;
+}
+footer td:nth-child(4), td:nth-child(8), td:nth-child(12){
+    text-align: right;
+}
+footer th:nth-child(1){
+    text-align: left;
+}
 
-.blueclass{
+
+
+/* CSS för färggladd tabel */
+table:nth-child(2) td{
+    width: 10vw;
+    height: 15vh;
+}
+.blueclass{ 
     background-color: blue;
-    width: 10em; height: 10em; 
     
 }
 .redclass{
     background-color: red;
-    width: 10em; height: 10em; 
 }
 .limeclass{
     background-color: lime;
-    width: 10em; height: 10em; 
 
 
 }
 .blackclass{
     background-color: black;
-    width: 10em; height: 10em; 
 
 }
 .yellowclass{
     background-color: yellow;
-    width: 10em; height: 10em; 
 
-}
-.bigsquaretb{
-    width: 10em; height: 10em; 
 }
 
 
